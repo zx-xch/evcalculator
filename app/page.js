@@ -45,10 +45,10 @@ function calcFunc(event) {
     4 Power: {(((AHR**4*(10))-1)*100).toFixed(2)}% <br />
     </TabsContent>
   <TabsContent value="underDog">
-    3 Power: {(((AHR**3*(6))-1)*100).toFixed(2)} <br/>
-    5 Power: {(((AHR**5*(20))-1)*100).toFixed(2)} <br/>
-    4 Flex: {(((AHR**4*(6)+(AHR**3)*(1-AHR)*(1.5)*(4))-1)*100).toFixed(2)} <br/>
-    5 Flex: {(((AHR**5*(10)+(AHR**4*(1-AHR)*(5)*(2.5)))-1)*100).toFixed(2)}
+    3 Power: {(((AHR**3*(6))-1)*100).toFixed(2)}% <br/>
+    5 Power: {(((AHR**5*(20))-1)*100).toFixed(2)}% <br/>
+    4 Flex: {(((AHR**4*(6)+(AHR**3)*(1-AHR)*(1.5)*(4))-1)*100).toFixed(2)}% <br/>
+    5 Flex: {(((AHR**5*(10)+(AHR**4*(1-AHR)*(5)*(2.5)))-1)*100).toFixed(2)}%
     </TabsContent>
 </Tabs>
   </CardContent>
