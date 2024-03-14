@@ -18,9 +18,9 @@ function calcFunc(event) {
 
   return (
     <main className="flex h-screen justify-center items-center">
-      <Card>
+      <Card className="w-9/12">
   <CardHeader>
-    <CardTitle>EV Calculator</CardTitle>
+    <CardTitle>Expected Value Calculator</CardTitle>
     <CardDescription>Calculate your expected value for Prizepicks and Underdog</CardDescription>
   </CardHeader>
   <CardContent>
@@ -29,7 +29,7 @@ function calcFunc(event) {
       <Input id="ahrValue" type="number" onChange={event => setAHR(event.target.value)} placeholder="Enter your Leg AHR" />
       </form>
 
-      <Tabs defaultValue="prizePicks" className="justify-center items-center">
+      <Tabs defaultValue="prizePicks" className="justify-center items-center ">
   <TabsList>
     <TabsTrigger value="prizePicks">
       <img src="https://images.prismic.io/colormatics/ee35bee7-9d3e-41f7-9b96-905305d14a12_Prizepicks+P.png?auto=format%2Ccompress&fit=max&q=50&w=800" width={25}/>
@@ -53,7 +53,7 @@ function calcFunc(event) {
 </Tabs>
   </CardContent>
   <CardFooter>
-    <p>Card Footer</p>
+    
   </CardFooter>
 </Card>
 
