@@ -28,7 +28,7 @@ function calcFunc(event) {
   <CardContent>
 
   <form onSubmit={calcFunc()} className="flex w-full max-w-sm items-center space-x-2 p-5">
-      <Input id="ahrValue" type="number" onChange={event => setAHR(event.target.value)} placeholder="Enter your Leg's Average Hit Rate" />
+      <Input id="ahrValue" type="number" onChange={event => setAHR(event.target.value)} placeholder="Enter Average Leg Hit Rate" />
       </form>
 
       <Tabs defaultValue="prizePicks" className="justify-center items-center ">
