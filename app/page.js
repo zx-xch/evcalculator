@@ -1,5 +1,7 @@
 "use client";
 
+import Image from 'next/image'
+
 import { Card, CardContent, CardDescription, CardFooter, CardHeader,CardTitle } from "@/components/ui/card"
 
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs"
@@ -21,22 +23,22 @@ function calcFunc(event) {
       <Card className="w-9/12">
   <CardHeader>
     <CardTitle>Expected Value Calculator</CardTitle>
-    <CardDescription>Calculate your expected value for Prizepicks and Underdog</CardDescription>
+    <CardDescription>Calculate your edge % for Prizepicks and Underdog</CardDescription>
   </CardHeader>
   <CardContent>
 
   <form onSubmit={calcFunc()} className="flex w-full max-w-sm items-center space-x-2 p-5">
-      <Input id="ahrValue" type="number" onChange={event => setAHR(event.target.value)} placeholder="Enter your Leg AHR" />
+      <Input id="ahrValue" type="number" onChange={event => setAHR(event.target.value)} placeholder="Enter your Leg's Average Hit Rate" />
       </form>
 
       <Tabs defaultValue="prizePicks" className="justify-center items-center ">
   <TabsList>
     <TabsTrigger value="prizePicks">
-      <img src="https://images.prismic.io/colormatics/ee35bee7-9d3e-41f7-9b96-905305d14a12_Prizepicks+P.png?auto=format%2Ccompress&fit=max&q=50&w=800" width={25}/>
+      <Image src="/images/Prizepicks Logo.avif"  width={25} height={25} alt="Prizepicks Logo"/>
     </TabsTrigger>
 
     <TabsTrigger value="underDog">
-      <img src="https://seeklogo.com/images/U/underdog-fantasy-logo-C2DBD36E93-seeklogo.com.png" width={25}/>
+      <Image src="/images/UnderdogLogo.png" width={25} height={25} alt="Underdog Logo"/>
     </TabsTrigger>
   </TabsList>
   <TabsContent value="prizePicks" className="px--10">
@@ -53,7 +55,7 @@ function calcFunc(event) {
 </Tabs>
   </CardContent>
   <CardFooter>
-    
+    <p className='sm-text'>Join our <a href="https://discord.gg/VbUWjkJ2" className='text-emerald-500 cursor-pointer'>DFS community</a></p> 
   </CardFooter>
 </Card>
 
