@@ -1,6 +1,7 @@
 "use client";
 
 import Image from 'next/image'
+import { Analytics } from "@vercel/analytics/react"
 
 import { Card, CardContent, CardDescription, CardFooter, CardHeader,CardTitle } from "@/components/ui/card"
 
@@ -58,7 +59,7 @@ function calcFunc(event) {
     <p className='sm-text'>Join our <a href="https://discord.gg/VbUWjkJ2" className='text-emerald-500 cursor-pointer'>DFS community</a></p> 
   </CardFooter>
 </Card>
-
+<Analytics />
     </main>
   );
 }
