@@ -24,12 +24,12 @@ function calcFunc(event) {
       <Card className="w-9/12">
   <CardHeader>
     <CardTitle>Expected Value Calculator</CardTitle>
-    <CardDescription>Calculate your edge % for Prizepicks and Underdog</CardDescription>
+    <CardDescription>Calculate your edge % for Prizepicks, Underdog, & Betr</CardDescription>
   </CardHeader>
   <CardContent>
 
   <form onSubmit={calcFunc()} className="flex w-full max-w-sm items-center space-x-2 p-5">
-      <Input id="ahrValue" type="number" onChange={event => setAHR(event.target.value)} placeholder="Enter Average Leg Hit Rate" />
+      <Input id="ahrValue" type="number" onChange={event => setAHR(event.target.value/100)} placeholder="Enter Average Leg Hit %" />
       </form>
 
       <Tabs defaultValue="prizePicks" className="justify-center items-center ">
@@ -40,6 +40,10 @@ function calcFunc(event) {
 
     <TabsTrigger value="underDog">
       <Image src="/images/UnderdogLogo.png" width={25} height={25} alt="Underdog Logo"/>
+    </TabsTrigger>
+
+    <TabsTrigger value="betr">
+      <Image src="/images/betrLogo.png" width={25} height={25} alt="Underdog Logo"/>
     </TabsTrigger>
   </TabsList>
   <TabsContent value="prizePicks" className="px--10">
@@ -52,6 +56,11 @@ function calcFunc(event) {
     5 Power: {(((AHR**5*(20))-1)*100).toFixed(2)}% <br/>
     4 Flex: {(((AHR**4*(6)+(AHR**3)*(1-AHR)*(1.5)*(4))-1)*100).toFixed(2)}% <br/>
     5 Flex: {(((AHR**5*(10)+(AHR**4*(1-AHR)*(5)*(2.5)))-1)*100).toFixed(2)}%
+    </TabsContent>
+    <TabsContent value="betr">
+    5 Power: {((AHR**5*(20)-1)*100).toFixed(2)}% <br />
+    5 Flex: {((AHR**5*(10)+(AHR**4*(1-AHR)*(5)*(2.5))-1)*100).toFixed(2)}% <br />
+    6 Flex: {((AHR**6*(20)+AHR**5*(1-AHR)*(6)*(1.25)+AHR**4*((1-AHR)**2)*(1.05)*(15)-1)*100).toFixed(2)}
     </TabsContent>
 </Tabs>
   </CardContent>
