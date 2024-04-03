@@ -43,7 +43,7 @@ function calcFunc(event) {
     </TabsTrigger>
 
     <TabsTrigger value="betr">
-      <Image src="/images/betrLogo.png" width={25} height={25} alt="Underdog Logo"/>
+      <Image src="/images/betrLogo.png" width={25} height={25} alt="Betr Logo"/>
     </TabsTrigger>
   </TabsList>
   <TabsContent value="prizePicks" className="px--10">
