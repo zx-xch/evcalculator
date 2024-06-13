@@ -47,17 +47,25 @@ function calcFunc(event) {
     </TabsTrigger>
   </TabsList>
   <TabsContent value="prizePicks" className="px--10">
+    3 Man: {((((AHR**3)*5)-1)*100).toFixed(2)}% <br />
     5 Man: {(((AHR**5*(10)+(AHR**4*(1-AHR)*(5)*(2))+(AHR**3*(1-AHR)**2)*(0.4)*(10))-1)*100).toFixed(2)}% <br />
     6 Man: {(((AHR**6*(25)+(AHR**5*(1-AHR)*(6)*(2))+(AHR**4*(1-AHR)**2)*(0.4)*(15))-1)*100).toFixed(2)}% <br />
+    2 Power: {((((AHR**2)*3)-1)*100).toFixed(2)}% <br />
     4 Power: {(((AHR**4*(10))-1)*100).toFixed(2)}% <br />
     </TabsContent>
   <TabsContent value="underDog">
+    2 Power: {((((AHR**2)*3)-1)*100).toFixed(2)}% <br />
     3 Power: {(((AHR**3*(6))-1)*100).toFixed(2)}% <br/>
+    4 Power: {(((AHR**4*(10))-1)*100).toFixed(2)}% <br />
     5 Power: {(((AHR**5*(20))-1)*100).toFixed(2)}% <br/>
     4 Flex: {(((AHR**4*(6)+(AHR**3)*(1-AHR)*(1.5)*(4))-1)*100).toFixed(2)}% <br/>
-    5 Flex: {(((AHR**5*(10)+(AHR**4*(1-AHR)*(5)*(2.5)))-1)*100).toFixed(2)}%
+    5 Flex: {(((AHR**5*(10)+(AHR**4*(1-AHR)*(5)*(2.5)))-1)*100).toFixed(2)}% <br />
+    6 Flex: {((((AHR**6)*(25)+(AHR**5)*(1-AHR)*6*(2.6)+(AHR**4)*((1-AHR)**2)*15*0.25)-1)*100).toFixed(2)}%
     </TabsContent>
     <TabsContent value="betr">
+    3 Man:
+    2 Power: {((((AHR**2)*3)-1)*100).toFixed(2)}% <br />
+    4 Power: {(((AHR**4*(10))-1)*100).toFixed(2)}% <br />
     5 Power: {((AHR**5*(20)-1)*100).toFixed(2)}% <br />
     5 Flex: {((AHR**5*(10)+(AHR**4*(1-AHR)*(5)*(2.5))-1)*100).toFixed(2)}% <br />
     6 Flex: {((AHR**6*(20)+AHR**5*(1-AHR)*(6)*(1.25)+AHR**4*((1-AHR)**2)*(1.05)*(15)-1)*100).toFixed(2)}
