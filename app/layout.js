@@ -4,7 +4,7 @@ import "./globals.css";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata = {
-  title: "JimmyPicks EV Calculator",
+  title: "PandaPicks EV Calculator",
   description: "Calculate your expected value for DFS",
 };
 
