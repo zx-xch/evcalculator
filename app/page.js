@@ -76,7 +76,7 @@ function calcFunc(event) {
 </Tabs>
   </CardContent>
   <CardFooter>
-    <p className='sm-text'>Join our <a href="https://discord.gg/VbUWjkJ2" className='text-emerald-500 cursor-pointer'>DFS community</a></p> 
+    <p className='sm-text'>Join our <a href="https://discord.gg/5UbjwReBKx" className='text-emerald-500 cursor-pointer'>DFS community</a></p> 
   </CardFooter>
 </Card>
 <Analytics />
